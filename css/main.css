@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+#main-nav{
+    background-color: rgba(161, 201, 226, .9);
+    height: 50px;
+    width: 100%;
+    border-color:rgba(161, 201, 226, .9);
+    border-style: dashed;
+}
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    }
+#main-nav li {
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+#main-nav li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #545657;
+    font-family: Helvetica;
+    font-size: 105%;
+}
+#main-nav a:hover {
+    color:black;
+}
+footer{
+    width: 100%;
+    border-style: dashed;
+}
