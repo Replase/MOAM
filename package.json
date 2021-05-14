@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Replase/MOAM#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0"
   }
 }
