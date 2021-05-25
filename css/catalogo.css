@@ -1,0 +1,14 @@
+.contact-container{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-style: dashed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-rows: minmax(250px, auto);
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve {
+  border-style: dashed;
+}

@@ -1,0 +1,14 @@
+.body-2{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-style: groove;
+    display: flex;
+}
+.text1{
+    width: 50%;
+}
+.datos{
+    width: 50%;
+}

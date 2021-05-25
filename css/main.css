@@ -41,7 +41,9 @@ header{
     color:black;
 }
 .body-1{
-    padding: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-style: dashed;
 }
 footer{
     background-color:#dea6a7  ;
@@ -102,3 +104,12 @@ footer{
     }
     
 }
+.border-a{
+    position: fixed;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+  .redes a{
+    display: block;
+    
+  }
