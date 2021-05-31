@@ -8,11 +8,11 @@
     grid-gap: 10px;
     grid-auto-rows: minmax(300px, auto);
 }
-.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve {
+.one{
   width: 100%;
   height: 100%;
 }
-.one img,.two img,.three img,.four img,.five img,.six img,.seven img,.eight img,.nine img,.ten img,.eleven img,.twelve img{
+.one img{
   width: 100%;
   height: 100%;
 }
