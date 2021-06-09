@@ -34,8 +34,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #FFf; /* color de fondo
-    opacity: .8;
+    background: #dea6a7; /* color de fondo
+    opacity: .6;
 
 }*/
 .info-title, .info-items{
@@ -107,7 +107,7 @@ form.form-contact{
 }
 .form-contact input[type="button"]{
     width: 200px;
-    background: #FF253C;
+    background: #dea6a7;
     padding: 10px;
     border: none;
     border-radius: 25px;
@@ -117,9 +117,11 @@ form.form-contact{
     font-weight: 600;
     cursor: pointer;
 }
-
+.form-contact input[type="button"]:active{
+    border:none;
+}
 .form-contact input[type="button"]:hover{
-    background: #EE2338;
+    background: #dea6a7;
 }
 .modal_wrap{
     width: 100%;
@@ -159,6 +161,7 @@ form.form-contact{
     font-size: 16px;
     color: #606060;
 }
+
 .mensaje p span{
     color: red;
 }

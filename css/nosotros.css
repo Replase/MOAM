@@ -1,0 +1,105 @@
+.body-1{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.gallery{
+    height: 500px;
+    width: 100%;
+}
+.item-gallery{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+    height: 60%;
+    width: 100%;
+}
+.imgg{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.imgg a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgg a img{
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    transition: .5s;
+}
+.imgg img:hover{
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+    cursor: pointer;
+}
+.text-gallery{
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.text-gallery p{
+    margin-top: -10px;
+    color: #808050;
+}
+.text-gallery h1{
+    color: gray;
+    font-size: 50px;
+    font-weight: 5;
+}
+.inform{
+    margin-top: 20px;
+    height: 250px;
+    width: 100%;
+    background-color: #fd485b;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-fond{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-fond input[type="button"]{
+    width: 200px;
+    background: #72D7E7;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    align-self: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+.img-fond input[type="button"]:hover{
+    background-color: #fd485b;
+}
+.img-fond input{
+    width: 100%;
+    border: none;
+    padding: 8px 0px 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #D1D1D1;
+} 
