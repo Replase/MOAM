@@ -5,10 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/catalogo.css">
+    <script src="scripts/jquery-3.6.0.js"></script>
+    <script src="scripts/catalogo.js"></script>
     <title>MOAM</title>
 </head>
+<div class="ala">
+    <div class="imagen">
+        <div class="contenedor">
+            <img src="img/bichaleco.jpg" alt="">
+        </div>
+    </div>
+    <div class="iconocerrar">
+        <i id="btn-close" class="bi bi-x-circle" style="font-size: 2rem; color: black;"></i>
+    </div>
+</div>
 <body>
     <header>
         <nav id="main-nav">
@@ -39,21 +51,20 @@
     </Section>
     <section>
         <div class="contact-container">
-            <div class="one"><img src="img/chaleco-azul.jpg" alt=""></div>
-            <div class="one"><img src="img/chaleco-negro.jpg" alt=""></div>
-            <div class="one"><img src="img/chaleco-rojo.jpg" alt=""></div>
-            <div class="one"><img src="img/chaleco-rosa.jpg" alt=""></div>
-            <div class="one"><img src="img/chamarra-gris.jpg" alt=""></div>
-            <div class="one"><img src="img/chamarra-negra.jpg" alt=""></div>
-            <div class="one"><img src="img/chamarra-roja.jpg" alt=""></div>
-            <div class="one"><img src="img/chamarra-rosa.jpg" alt=""></div>
-            <div class="one"><img src="img/dino-brown.jpg" alt=""></div>
-            <div class="one"><img src="img/dino-pink.jpg" alt=""></div>
-            <div class="one"><img src="img/bichaleco.jpg" alt=""></div>
+            <div class="one"><img src="img/chaleco-azul.jpg" id="uno"></div>
+            <div class="one"><img src="img/chaleco-negro.jpg" id="dos"></div>
+            <div class="one"><img src="img/chaleco-rojo.jpg" id="tres"></div>
+            <div class="one"><img src="img/chaleco-rosa.jpg" id="cuatro"></div>
+            <div class="one"><img src="img/chamarra-gris.jpg" id="cinco"></div>
+            <div class="one"><img src="img/chamarra-negra.jpg" id="seis"></div>
+            <div class="one"><img src="img/chamarra-roja.jpg" id="siete"></div>
+            <div class="one"><img src="img/chamarra-rosa.jpg" id="ocho"></div>
+            <div class="one"><img src="img/dino-brown.jpg" id="nueve"></div>
+            <div class="one"><img src="img/dino-pink.jpg" id="diez"></div>
+            <div class="one"><img src="img/bichaleco.jpg" id="once"></div>
             <div class="one">Doce</div>
         </div>
     </section>
-
     <footer>
         <div class="container-f-a">
             <div class="container-body">
