@@ -1,6 +1,7 @@
 .body-1{
     margin-left: 100px;
     margin-right: 100px;
+    text-align: justify;
 }
 .gallery{
     height: 500px;
@@ -104,3 +105,10 @@
     margin-bottom: 10px;
     border-bottom: 2px solid #D1D1D1;
 } 
+.video{
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    float: right;
+    }
