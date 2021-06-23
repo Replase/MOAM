@@ -1,7 +1,8 @@
 $(Document).ready(function(){
     var imagen='';
     $('#uno').click(function(){
-        imagen='<img src="../img/chaleco-azul.jpg">'
+        imagen ="<img src={{ url_for('static', filename='img/chaleco-azul.jpg') }}>"
+        alert(imagen)
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+

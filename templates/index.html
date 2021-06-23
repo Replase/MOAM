@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/slider.js"></script>
-    <script src="scripts/jquery-3.6.0.js"></script>
-    <script src="scripts/canvas.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/nosotros.css">
+    <script src="{{ url_for('static', filename='scripts/slider.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/jquery-3.6.0.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/canvas.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }} ">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons/font/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nosotros.css') }}">
     <title>MOAM</title>
 </head>
 <body>
     <header>
         <nav id="main-nav">
-            <a href="index.html"><img src="img/Positivo/2.png"></a>
+            <a href="/" ><img src="{{ url_for('static', filename='img/Positivo/2.png') }}"></a>
             <div>
                 <ul>
                     <li>
-                        <a href="templates/Catalogo.html">Catalogo</a>
+                        <a href="/Catalogo">Catalogo</a>
                     </li>
                     <li>
-                        <a href="index.html">Nosotros</a>
+                        <a href="/">Nosotros</a>
                     </li>
                     <li>
-                        <a href="templates/Contacto.html">Contacto</a>
+                        <a href="/contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@
         <section>
             <div class="body-1">
                 <section class="logo">
-                    <img src="img/Positivo/1.png" >
+                    <img src="{{ url_for('static', filename='img/Positivo/1.png') }}" >
                 </section>
                 <section class="text-main">
                     <h1>Dedicacion para ustedes</h1>
@@ -67,7 +67,7 @@
         </section>
         <section class="img-fond">
             <h1>Checa nuestros productos</h1>
-            <input type="button" value="Saber mas" onclick="location.href='Catalogo.html';" id="btn-llevar">
+            <input type="button" value="Saber mas" onclick="location.href='/Catalogo';" id="btn-llevar">
         </section>
         <section class="gallery">
             <div class="text-gallery">
@@ -76,16 +76,16 @@
             </div>
             <div class="item-gallery">
                 <div class="imgg">
-                    <a href="templates/Catalogo.html"><img src="img/chaleco-azul.jpg"></a>
+                    <a href="/Catalogo"><img src="{{ url_for('static', filename='img/chaleco-azul.jpg') }}"></a>
                 </div>
                 <div class="imgg">
-                    <a href="templates/Catalogo.html"><img src="img/chaleco-negro.jpg"></a>
+                    <a href="/Catalogo"><img src="{{ url_for('static', filename='img/chaleco-negro.jpg') }}"></a>
                 </div>
                 <div class="imgg">
-                    <a href="templates/Catalogo.html"><img src="img/chaleco-rosa.jpg"></a>
+                    <a href="/Catalogo"><img src="{{ url_for('static', filename='img/chaleco-rosa.jpg') }}"></a>
                 </div>
                 <div class="imgg">
-                    <a href="templates/Catalogo.html"><img src="img/chaleco-azul.jpg"></a>
+                    <a href="/Catalogo"><img src="{{ url_for('static', filename='img/chaleco-azul.jpg') }}"></a>
                 </div>
             </div>
         </section>
@@ -115,14 +115,14 @@
                             </div>    
                         </div>
                     </div>
-                    <img src="img/pexelsart/pexels-anni-roenkae-2457317.jpg">
+                    <img src="{{ url_for('static', filename='img/pexelsart/pexels-anni-roenkae-2457317.jpg') }}">
                 </div>
     
                 <div class="mySlides fade">
                     <div class="numbertext2">
-                        <img src="img/Negativo/1.png" alt="">
+                        <img src="{{ url_for('static', filename='img/Negativo/1.png') }}" alt="">
                     </div>
-                    <img src="img/pexelsart/pexels-moose-photos-1037994.jpg" >
+                    <img src="{{ url_for('static', filename='img/pexelsart/pexels-moose-photos-1037994.jpg') }}" >
                 </div>
             </div>
             <br>

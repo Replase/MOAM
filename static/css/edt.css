@@ -1,0 +1,48 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: garamond;
+    background-color: #fff ;
+}
+.registro{
+    width: 100%;
+    overflow: hidden;
+    background-color:white;
+    height: 500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.formu{
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color:white;
+    border-radius: 7%;
+    flex-direction: column;
+    height: 80%;
+    background-image: url(../img/shutterstock_1907834110-min.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.formu input{
+    padding-top: 5%;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+}
+.editb{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
