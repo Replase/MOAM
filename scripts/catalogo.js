@@ -1,7 +1,7 @@
 $(Document).ready(function(){
     var imagen='';
     $('#uno').click(function(){
-        imagen='<img src="img/chaleco-azul.jpg">'
+        imagen='<img src="../img/chaleco-azul.jpg">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -20,7 +20,7 @@ $(Document).ready(function(){
         });
     })
     $('#dos').click(function(){
-        imagen='<img src="img/chaleco-negro.jpg" id="dos">'
+        imagen='<img src="../img/chaleco-negro.jpg" id="dos">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -39,7 +39,7 @@ $(Document).ready(function(){
         });
     })
     $('#tres').click(function(){
-        imagen='<img src="img/chaleco-rojo.jpg" id="tres">'
+        imagen='<img src="../img/chaleco-rojo.jpg" id="tres">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -58,7 +58,7 @@ $(Document).ready(function(){
         });
     })
     $('#cuatro').click(function(){
-        imagen='<img src="img/chaleco-rosa.jpg" id="cuatro">'
+        imagen='<img src="../img/chaleco-rosa.jpg" id="cuatro">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -77,7 +77,7 @@ $(Document).ready(function(){
         });
     })
     $('#cinco').click(function(){
-        imagen='<img src="img/chamarra-gris.jpg" id="cinco">'
+        imagen='<img src="../img/chamarra-gris.jpg" id="cinco">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -96,7 +96,7 @@ $(Document).ready(function(){
         });
     })
     $('#seis').click(function(){
-        imagen='<img src="img/chamarra-negra.jpg" id="seis">'
+        imagen='<img src="../img/chamarra-negra.jpg" id="seis">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -115,7 +115,7 @@ $(Document).ready(function(){
         });
     })
     $('#siete').click(function(){
-        imagen='<img src="img/chamarra-roja.jpg" id="siete">'
+        imagen='<img src="../img/chamarra-roja.jpg" id="siete">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -134,7 +134,7 @@ $(Document).ready(function(){
         });
     })
     $('#ocho').click(function(){
-        imagen='<img src="img/chamarra-rosa.jpg" id="ocho">'
+        imagen='<img src="../img/chamarra-rosa.jpg" id="ocho">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -153,7 +153,7 @@ $(Document).ready(function(){
         });
     })
     $('#nueve').click(function(){
-        imagen='<img src="img/dino-brown.jpg" id="nueve">'
+        imagen='<img src="../img/dino-brown.jpg" id="nueve">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -172,7 +172,7 @@ $(Document).ready(function(){
         });
     })
     $('#diez').click(function(){
-        imagen='<img src="img/dino-pink.jpg" id="diez">'
+        imagen='<img src="../img/dino-pink.jpg" id="diez">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -191,7 +191,26 @@ $(Document).ready(function(){
         });
     })
     $('#once').click(function(){
-        imagen='<img src="img/bichaleco.jpg" id="once">'
+        imagen='<img src="../img/bichaleco.jpg" id="once">'
+        if(imagen=='' == false){
+            var mostrar='<div class="ala">'+
+                            '<div class="imagen">'+
+                                '<div class="contenedor">'+
+                                    imagen+
+                                '</div>'+
+                            '</div>'+
+                            '<div class="iconocerrar">'+
+                                '<i id="btn-close" class="bi bi-x-circle" style="font-size: 2rem; color: black;"></i>'+
+                            '</div>'+
+                       '</div>';
+            $('body').append(mostrar);
+        }
+        $('#btn-close').click(function(){
+            $('.ala').remove();
+        });
+    })
+    $('#doce').click(function(){
+        imagen='<img src="../img/vestido-chq.jpg" id="doce">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+

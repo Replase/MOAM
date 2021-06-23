@@ -1,10 +1,31 @@
 .body-1{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+}
+.text-main{
+    width: 60%;
+}
+.text-main p{
+    text-align: justify;
 }
 .gallery{
     height: 500px;
     width: 100%;
+    overflow: inherit;
 }
 .item-gallery{
     display: flex;
@@ -58,10 +79,102 @@
     font-weight: 5;
 }
 .inform{
-    margin-top: 20px;
-    height: 250px;
+    height: 350px;
     width: 100%;
-    background-color: #fd485b;
+    padding: none;
+    background-color: #fff;
+}
+.inform img{
+    height: 300px;
+}
+.slideshow-container{
+    position: relative;
+    margin: auto;
+}
+.mySlides {display: none;}
+
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext1{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/pexelsart/pexels-anni-roenkae-2457317.jpg);
+}
+.contenumber{
+    display: flex;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+    justify-content: space-between;
+}
+.numbertext2{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/pexelsart/pexels-moose-photos-1037994.jpg);
+}
+.numbertext2 img{
+    padding-bottom: 5px;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active {
+    background-color: #717171;
+  }
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+@-webkit-keyframes fade {
+    from {opacity: .5} 
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+    from {opacity: .5} 
+    to {opacity: 1}
+  }
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+  
+  
+ol,ul{
+    list-style-type:none;
 }
 .info{
     display: flex;
@@ -104,3 +217,56 @@
     margin-bottom: 10px;
     border-bottom: 2px solid #D1D1D1;
 } 
+.item1{
+    width: 33%;
+    align-items: center;
+    text-align: center;
+}
+.canvaszone{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+#canvas{
+    
+    display: block;
+    width: 50%;
+    height: 80%;
+    min-width: 150px;
+    min-height: 150px;
+}
+.canvadiv{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.valores{
+    width: 50%;
+}
+.valores ul{
+    padding-left: 0;
+}
+.valores ul li{
+    margin:5px 0 5px 0;
+}
+.valores h1{
+    margin:5px 0 5px 0;
+}
+.valores ul li i{
+    color: #FF253C ;
+}
+.videosec{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }

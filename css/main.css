@@ -2,11 +2,13 @@ body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: garamond;
+    font-family: Verdana, sans-serif;;
     background-color: #fff ;
 }
+* {box-sizing: border-box}
+img {vertical-align: middle;}
 header{
-    background-color: rgba(161, 201, 226, .5);
+    background-color: rgba(197, 240, 247  , .5);
 }
 #main-nav{
     height: 56px;
@@ -37,9 +39,11 @@ header{
     color: #545657;
     font-family: Helvetica;
     font-size: 105%;
+    transition: .5s;
 }
 #main-nav a:hover {
     color:black;
+    transition: .5s;
 }
 footer{
     background-color:#dea6a7  ;
@@ -109,10 +113,9 @@ footer{
 .redes a{
    display: block;
 }
-
-.info{
-    display: flex;
-    align-items: center;
+#main-nav a img{
+    width: 70px;
+    height: 40px;
 }
 .titulo-contacto{
     height: 300px;
