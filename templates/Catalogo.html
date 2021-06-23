@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/catalogo.css">
-    <script src="../scripts/jquery-3.6.0.js"></script>
-    <script src="../scripts/catalogo.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons/font/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/catalogo.css') }}">
+    <script src="{{ url_for('static', filename='scripts/jquery-3.6.0.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/catalogo.js') }}"></script>
     <title>MOAM</title>
 </head>
 <audio autoplay="-1">
-    <source src="../img/Sunset.mp3" type="audio/mpeg">
+    <source src="{{ url_for('static', filename='img/Sunset.mp3') }}" type="audio/mpeg">
 </audio>
 <body>
     <header>
         <nav id="main-nav">
-            <a href="../index.html"><img src="../img/Positivo/2.png"></a>
+            <a href="/"><img src="{{ url_for('static', filename='img/Positivo/2.png') }}"></a>
             <div>
                 <ul>
                     <li>
-                        <a href="Catalogo.html">Catalogo</a>
+                        <a href="/Catalogo">Catalogo</a>
                     </li>
                     <li>
-                        <a href="../index.html">Nosotros</a>
+                        <a href="/">Nosotros</a>
                     </li>
                     <li>
-                        <a href="Contacto.html">Contacto</a>
+                        <a href="/contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -44,18 +44,18 @@
     </Section>
     <main>
         <div class="contact-container">
-            <div class="one"><img src="../img/chaleco-azul.jpg" id="uno"></div>
-            <div class="one"><img src="../img/chaleco-negro.jpg" id="dos"></div>
-            <div class="one"><img src="../img/chaleco-rojo.jpg" id="tres"></div>
-            <div class="one"><img src="../img/chaleco-rosa.jpg" id="cuatro"></div>
-            <div class="one"><img src="../img/chamarra-gris.jpg" id="cinco"></div>
-            <div class="one"><img src="../img/chamarra-negra.jpg" id="seis"></div>
-            <div class="one"><img src="../img/chamarra-roja.jpg" id="siete"></div>
-            <div class="one"><img src="../img/chamarra-rosa.jpg" id="ocho"></div>
-            <div class="one"><img src="../img/dino-brown.jpg" id="nueve"></div>
-            <div class="one"><img src="../img/dino-pink.jpg" id="diez"></div>
-            <div class="one"><img src="../img/bichaleco.jpg" id="once"></div>
-            <div class="one"><img src="../img/vestido-chq.jpg" id="doce"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/chaleco-azul.jpg') }}" id="uno"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/chaleco-negro.jpg') }}" id="dos"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/chaleco-rojo.jpg') }}" id="tres"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/chaleco-rosa.jpg') }}" id="cuatro"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/chamarra-gris.jpg') }}" id="cinco"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/chamarra-negra.jpg') }}" id="seis"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/chamarra-roja.jpg') }}" id="siete"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/chamarra-rosa.jpg') }}" id="ocho"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/dino-brown.jpg') }}" id="nueve"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/dino-pink.jpg') }}" id="diez"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/bichaleco.jpg') }}" id="once"></div>
+            <div class="one"><img src="{{ url_for('static', filename='img/vestido-chq.jpg') }}" id="doce"></div>
         </div>
     </main>
     <footer>

@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/contacto.css">
-    <script src="../scripts/jquery-3.6.0.js"></script>
-    <script src="../scripts/contacto.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons/font/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contacto.css') }}">
+    <script src="{{ url_for('static', filename='scripts/jquery-3.6.0.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/contacto.js') }}"></script>
     <title>MOAM</title>
 </head>
 <body>
     <header>
         <nav id="main-nav">
-            <a href="../index.html"><img src="../img/Positivo/2.png"></a>
+            <a href="/"><img src="{{ url_for('static', filename='img/Positivo/2.png') }}"></a>
             <div>
                 <ul>
                     <li>
-                        <a href="Catalogo.html">Catalogo</a>
+                        <a href="/Catalogo">Catalogo</a>
                     </li>
                     <li>
-                        <a href="../index.html">Nosotros</a>
+                        <a href="/">Nosotros</a>
                     </li>
                     <li>
-                        <a href="Contacto.html">Contacto</a>
+                        <a href="/contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -55,19 +55,44 @@
             <h2>Contactanos</h2>
             <div class="user-div">
                 <label for="nombre">Nombre(s) *</label>
-                <input type="text" id="nombre" placeholder="Ingrese su(s) nombre(s)">
+                <input type="text" name ="nombre" placeholder="Ingrese su(s) nombre(s)">
                 <label for="apellido">Apellido(s) *</label>
-                <input type="text" id="apellido" placeholder="Ingrese su(s) apellido(s)">
+                <input type="text" name ="apellido" placeholder="Ingrese su(s) apellido(s)">
                 <label for="telefono">Telefono </label>
-                <input type="text" id="telefono" placeholder="Ingrese su telefono">
+                <input type="text" name ="telefono" placeholder="Ingrese su telefono">
                 <label for="e-mail">E-mail *</label>
-                <input type="text" id="e-mail" placeholder="Ingrese su e-mail">
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje" cols="30" rows="10"></textarea>
-
-                <input type="button" value="Enviar" id="btn-send">
+                <input type="text" name ="e-mail" placeholder="Ingrese su e-mail">
+                <button type="submit">
+                    Guardar
+                </button>
             </div>
         </form>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellidos</td>
+                    <td>Telefono</td>
+                    <td>e-mail</td>
+                    <td>....</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cliente in clientes%}
+                <tr>
+                    <td>{{cliente.1}}</td>
+                    <td>{{cliente.2}}</td>
+                    <td>{{cliente.3}}</td>
+                    <td>{{cliente.4}}</td>
+                    <td>
+                    
+                        <a href = "/edit/{{cliente.0}}">Editar</a>
+                        <a href = "/eliminar/{{cliente.0}}">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </section>
     <footer>
         <div class="container-f-a">
