@@ -39,7 +39,6 @@
     <Section class="titulo-contacto">
         <h1>Contacto</h1>
     </Section>
-    <!-- Seccion de llenado de datos-->
     <section class="form-wrap">
         <section class="contact-info">
             <section class="info-title">
@@ -62,37 +61,38 @@
                 <input type="text" name ="telefono" placeholder="Ingrese su telefono">
                 <label for="e-mail">E-mail *</label>
                 <input type="text" name ="e-mail" placeholder="Ingrese su e-mail">
-                <button type="submit">
+                <button type="submit" id="btn-send">
                     Guardar
                 </button>
             </div>
         </form>
-        <table>
-            <thead>
-                <tr>
-                    <td>Nombre</td>
-                    <td>Apellidos</td>
-                    <td>Telefono</td>
-                    <td>e-mail</td>
-                    <td>....</td>
-                </tr>
-            </thead>
-            <tbody>
-                {% for cliente in clientes%}
-                <tr>
-                    <td>{{cliente.1}}</td>
-                    <td>{{cliente.2}}</td>
-                    <td>{{cliente.3}}</td>
-                    <td>{{cliente.4}}</td>
-                    <td>
-                    
-                        <a href = "/edit/{{cliente.0}}">Editar</a>
-                        <a href = "/eliminar/{{cliente.0}}">Eliminar</a>
-                    </td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <section class="tabla1">
+            <table >
+                <thead>
+                    <tr class="tr1">
+                        <td><H1>Nombre</H1></td>
+                        <td><h1>Apellidos</h1></td>
+                        <td><h1>Telefono</h1></td>
+                        <td><h1>e-mail</h1></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for cliente in clientes%}
+                    <tr>
+                        <td>{{cliente.1}}</td>
+                        <td>{{cliente.2}}</td>
+                        <td>{{cliente.3}}</td>
+                        <td>{{cliente.4}}</td>
+                        <td>
+                            <a href = "/edit/{{cliente.0}}">Editar</a>
+                            <a href = "/eliminar/{{cliente.0}}">Eliminar</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
     </section>
     <footer>
         <div class="container-f-a">

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons/font/bootstrap-icons.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/catalogo.css') }}">
-    <script src="{{ url_for('static', filename='scripts/jquery-3.6.0.js') }}"></script>
-    <script src="{{ url_for('static', filename='scripts/catalogo.js') }}"></script>
+    <link rel="stylesheet" href="../static/css/catalogo.css">
+    <script src="../static/scripts/jquery-3.6.0.js"></script>
+    <script src="../static/scripts/catalogo.js"></script>
     <title>MOAM</title>
 </head>
 <audio autoplay="-1">
-    <source src="{{ url_for('static', filename='img/Sunset.mp3') }}" type="audio/mpeg">
+    <source src="../static/img/Sunset.mp3" type="audio/mpeg">
 </audio>
 <body>
     <header>
@@ -43,8 +43,8 @@
         <h1>Catalogo</h1>
     </Section>
     <main>
-        <div class="contact-container">
-            <div class="one"><img src="{{ url_for('static', filename='img/chaleco-azul.jpg') }}" id="uno"></div>
+        <div class="contact-container"> 
+            <div class="one"><img src="../static/img/chaleco-azul.jpg" id="uno"></div>
             <div class="one"><img src="{{ url_for('static', filename='img/chaleco-negro.jpg') }}" id="dos"></div>
             <div class="one"><img src="{{ url_for('static', filename='img/chaleco-rojo.jpg') }}" id="tres"></div>
             <div class="one"><img src="{{ url_for('static', filename='img/chaleco-rosa.jpg') }}" id="cuatro"></div>

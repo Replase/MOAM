@@ -1,8 +1,7 @@
 $(Document).ready(function(){
     var imagen='';
     $('#uno').click(function(){
-        imagen ="<img src={{ url_for('static', filename='img/chaleco-azul.jpg') }}>"
-        alert(imagen)
+        imagen='<img src="../static/img/chaleco-azul.jpg" id="dos">';
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -21,7 +20,7 @@ $(Document).ready(function(){
         });
     })
     $('#dos').click(function(){
-        imagen='<img src="../img/chaleco-negro.jpg" id="dos">'
+        imagen='<img src="../static/img/chaleco-negro.jpg" id="dos">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -40,7 +39,7 @@ $(Document).ready(function(){
         });
     })
     $('#tres').click(function(){
-        imagen='<img src="../img/chaleco-rojo.jpg" id="tres">'
+        imagen='<img src="../static/img/chaleco-rojo.jpg" id="tres">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -59,7 +58,7 @@ $(Document).ready(function(){
         });
     })
     $('#cuatro').click(function(){
-        imagen='<img src="../img/chaleco-rosa.jpg" id="cuatro">'
+        imagen='<img src="../static/img/chaleco-rosa.jpg" id="cuatro">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -78,7 +77,7 @@ $(Document).ready(function(){
         });
     })
     $('#cinco').click(function(){
-        imagen='<img src="../img/chamarra-gris.jpg" id="cinco">'
+        imagen='<img src="../static/img/chamarra-gris.jpg" id="cinco">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -97,7 +96,7 @@ $(Document).ready(function(){
         });
     })
     $('#seis').click(function(){
-        imagen='<img src="../img/chamarra-negra.jpg" id="seis">'
+        imagen='<img src="../static/img/chamarra-negra.jpg" id="seis">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -116,7 +115,7 @@ $(Document).ready(function(){
         });
     })
     $('#siete').click(function(){
-        imagen='<img src="../img/chamarra-roja.jpg" id="siete">'
+        imagen='<img src="../static/img/chamarra-roja.jpg" id="siete">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -135,7 +134,7 @@ $(Document).ready(function(){
         });
     })
     $('#ocho').click(function(){
-        imagen='<img src="../img/chamarra-rosa.jpg" id="ocho">'
+        imagen='<img src="../static/img/chamarra-rosa.jpg" id="ocho">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -154,7 +153,7 @@ $(Document).ready(function(){
         });
     })
     $('#nueve').click(function(){
-        imagen='<img src="../img/dino-brown.jpg" id="nueve">'
+        imagen='<img src="../static/img/dino-brown.jpg" id="nueve">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -173,7 +172,7 @@ $(Document).ready(function(){
         });
     })
     $('#diez').click(function(){
-        imagen='<img src="../img/dino-pink.jpg" id="diez">'
+        imagen='<img src="../static/img/dino-pink.jpg" id="diez">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -192,7 +191,7 @@ $(Document).ready(function(){
         });
     })
     $('#once').click(function(){
-        imagen='<img src="../img/bichaleco.jpg" id="once">'
+        imagen='<img src="../static/img/bichaleco.jpg" id="once">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+
@@ -211,7 +210,7 @@ $(Document).ready(function(){
         });
     })
     $('#doce').click(function(){
-        imagen='<img src="../img/vestido-chq.jpg" id="doce">'
+        imagen='<img src="../static/img/vestido-chq.jpg" id="doce">'
         if(imagen=='' == false){
             var mostrar='<div class="ala">'+
                             '<div class="imagen">'+

@@ -8,10 +8,11 @@
     display: flex;
     overflow: hidden;
     background-color: #fff ;
+    width: 100%;
 
 }
 .contact-info{
-    width: 50%;
+    width: 25%;
     position: relative;
     background-size: cover;
     background-position: center center;
@@ -51,7 +52,7 @@
 }
 
 form.form-contact{
-    width: 50%;
+    width: 25%;
     padding: 30px 40px;
 
 }
@@ -152,9 +153,31 @@ form.form-contact{
     display: inline-block;
     padding: 3px 10px;
     margin-top: 10px;
-
     background: #E25151;
     color: #fff;
     border: 2px solid #B14141;
     cursor: pointer;
+}
+.tabla1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tabla1 table{
+    width: 100%;
+}
+.tabla1 table tbody td a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-weight: 300;
+    border-radius: 5%;
+    width: 100%;
+    transition: .5s;
+}
+.tabla1 table tbody td a:hover{
+    color: black;
+    transition: .5s;
+
 }
