@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons/font/bootstrap-icons.css') }}">
-    <link rel="stylesheet" href="../static/css/catalogo.css">
-    <script src="../static/scripts/jquery-3.6.0.js"></script>
-    <script src="../static/scripts/catalogo.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/catalogo.css') }}">
+    <script src="{{ url_for('static', filename='scripts/jquery-3.6.0.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/catalogo.js') }}"></script>
     <title>MOAM</title>
 </head>
 <audio autoplay="-1">
-    <source src="../static/img/Sunset.mp3" type="audio/mpeg">
+    <source src="{{ url_for('static', filename='img/Sunset.mp3') }}" type="audio/mpeg">
 </audio>
 <body>
     <header>
@@ -21,7 +21,7 @@
             <div>
                 <ul>
                     <li>
-                        <a href="/Catalogo">Catalogo</a>
+                        <a href="/Catalogo">Catálogo</a>
                     </li>
                     <li>
                         <a href="/">Nosotros</a>
@@ -40,11 +40,11 @@
         </div>
     </div>
     <Section class="titulo-contacto">
-        <h1>Catalogo</h1>
+        <h1>Catálogo</h1>
     </Section>
     <main>
-        <div class="contact-container"> 
-            <div class="one"><img src="../static/img/chaleco-azul.jpg" id="uno"></div>
+        <div class="contact-container">
+            <div class="one"><img src="{{ url_for('static', filename='img/chaleco-azul.jpg') }}" id="uno"></div>
             <div class="one"><img src="{{ url_for('static', filename='img/chaleco-negro.jpg') }}" id="dos"></div>
             <div class="one"><img src="{{ url_for('static', filename='img/chaleco-rojo.jpg') }}" id="tres"></div>
             <div class="one"><img src="{{ url_for('static', filename='img/chaleco-rosa.jpg') }}" id="cuatro"></div>
@@ -63,12 +63,12 @@
             <div class="container-body">
                 <div class="column1">
                     <h1>Redes Sociales</h1>
-                    <a href="www.facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem; color: black;"></i><label>Siguenos en Facebook</label></a>
+                    <a href="www.facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem; color: black;"></i><label>Síguenos en Facebook</label></a>
                     <p></p>
-                    <a href="www.instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem; color: black;"></i><label>Siguenos en Instagram</label></a>
+                    <a href="www.instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem; color: black;"></i><label>Síguenos en Instagram</label></a>
                 </div>
                 <div class="column2">
-                    <h1>Informacion de Contacto</h1>
+                    <h1>Información de Contacto</h1>
                     <address>
                         <div class="address">
                             <i class="bi bi-telephone-fill" style="font-size: 1.5rem; color: black;"></i>
@@ -76,7 +76,7 @@
                         </div>
                         <p><i class="bi bi-house-door-fill" style="font-size: 1.5rem; color: black;"></i>  +527351506518</p>
                         <p></p>
-                        <p><i class="bi bi-envelope-fill" style="font-size: 1.5rem; color: black;"></i>  alan.emi10@hotmail.com</p> 
+                        <p><i class="bi bi-envelope-fill" style="font-size: 1.5rem; color: black;"></i>  alan.emi10@hotmail.com</p>
                     </address>
                 </div>
             </div>

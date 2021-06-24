@@ -39,11 +39,12 @@
     <Section class="titulo-contacto">
         <h1>Contacto</h1>
     </Section>
+    <!-- Seccion de llenado de datos-->
     <section class="form-wrap">
         <section class="contact-info">
             <section class="info-title">
                 <span class="bi bi-person-fill"></span>
-                <h3>Informacion <br>De Contacto</h3>
+                <h3>Información <br>De Contacto</h3>
             </section>
             <section class="info-items">
                 <p><span class="bi bi-envelope"></span>alan.emi10@hotmail.com</p>
@@ -51,60 +52,59 @@
             </section>
         </section>
         <form action="" class="form-contact">
-            <h2>Contactanos</h2>
+            <h2>Contáctanos</h2>
             <div class="user-div">
                 <label for="nombre">Nombre(s) *</label>
                 <input type="text" name ="nombre" placeholder="Ingrese su(s) nombre(s)">
                 <label for="apellido">Apellido(s) *</label>
                 <input type="text" name ="apellido" placeholder="Ingrese su(s) apellido(s)">
-                <label for="telefono">Telefono </label>
-                <input type="text" name ="telefono" placeholder="Ingrese su telefono">
+                <label for="telefono">Teléfono </label>
+                <input type="text" name ="telefono" placeholder="Ingrese su teléfono">
                 <label for="e-mail">E-mail *</label>
                 <input type="text" name ="e-mail" placeholder="Ingrese su e-mail">
-                <button type="submit" id="btn-send">
+                <button type="submit">
                     Guardar
                 </button>
             </div>
         </form>
-        <section class="tabla1">
-            <table >
-                <thead>
-                    <tr class="tr1">
-                        <td><H1>Nombre</H1></td>
-                        <td><h1>Apellidos</h1></td>
-                        <td><h1>Telefono</h1></td>
-                        <td><h1>e-mail</h1></td>
-                        <td></td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for cliente in clientes%}
-                    <tr>
-                        <td>{{cliente.1}}</td>
-                        <td>{{cliente.2}}</td>
-                        <td>{{cliente.3}}</td>
-                        <td>{{cliente.4}}</td>
-                        <td>
-                            <a href = "/edit/{{cliente.0}}">Editar</a>
-                            <a href = "/eliminar/{{cliente.0}}">Eliminar</a>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </section>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellidos</td>
+                    <td>Telefono</td>
+                    <td>e-mail</td>
+                    <td>....</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cliente in clientes%}
+                <tr>
+                    <td>{{cliente.1}}</td>
+                    <td>{{cliente.2}}</td>
+                    <td>{{cliente.3}}</td>
+                    <td>{{cliente.4}}</td>
+                    <td>
+
+                        <a href = "/edit/{{cliente.0}}">Editar</a>
+                        <a href = "/eliminar/{{cliente.0}}">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </section>
     <footer>
         <div class="container-f-a">
             <div class="container-body">
                 <div class="column1">
                     <h1>Redes Sociales</h1>
-                    <a href="www.facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem; color: black;"></i><label>Siguenos en Facebook</label></a>
+                    <a href="www.facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem; color: black;"></i><label>Síguenos en Facebook</label></a>
                     <p></p>
-                    <a href="www.instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem; color: black;"></i><label>Siguenos en Instagram</label></a>
+                    <a href="www.instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem; color: black;"></i><label>Síguenos en Instagram</label></a>
                 </div>
                 <div class="column2">
-                    <h1>Informacion de Contacto</h1>
+                    <h1>Información de Contacto</h1>
                     <address>
                         <div class="address">
                             <i class="bi bi-telephone-fill" style="font-size: 1.5rem; color: black;"></i>
@@ -112,7 +112,7 @@
                         </div>
                         <p><i class="bi bi-house-door-fill" style="font-size: 1.5rem; color: black;"></i>  +527351506518</p>
                         <p></p>
-                        <p><i class="bi bi-envelope-fill" style="font-size: 1.5rem; color: black;"></i>  alan.emi10@hotmail.com</p> 
+                        <p><i class="bi bi-envelope-fill" style="font-size: 1.5rem; color: black;"></i>  alan.emi10@hotmail.com</p>
                     </address>
                 </div>
             </div>
